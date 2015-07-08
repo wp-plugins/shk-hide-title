@@ -57,7 +57,9 @@ if (!class_exists('st_hide_titles')) {
         else {
             ?>
         <style type="text/css">
-        #post-<?php echo $post->ID; ?> .entry-title {display:none;}
+        #post-<?php echo $post->ID; ?> .entry-title,
+        #post-<?php echo $post->ID; ?> .entry-header h1
+         {display:none;}
         </style>
 
         <?php   } 
